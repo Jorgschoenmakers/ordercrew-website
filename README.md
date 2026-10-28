@@ -1,35 +1,19 @@
 # OrderCrew website
 
-De homepage, gedeelde demo-inlog en voorbeeldkeuken worden gebouwd uit drie tekstbestanden die met de GitHub-webeditor kunnen worden bijgewerkt. Er zijn geen externe Python-pakketten nodig.
+Plaats `site-source.json`, `build_site.py` en `README.md` samen in de hoofdmap van de GitHub-repository.
 
-## Render-instellingen
-
-Plaats `site-source.json`, `build_site.py` en dit `README.md` samen in de hoofdmap van de repository.
-
-Build Command:
+Render Build Command blijft:
 
 ```sh
 python3 build_site.py
 ```
 
-Publish Directory:
+Render Publish Directory blijft `ordercrew-site`.
 
-```text
-ordercrew-site
-```
+De bron bevat 21 openbare bestanden. HTML, CSS, JavaScript, SVG en andere tekst staan als leesbare UTF-8-regels in JSON. Alleen binaire media worden base64 gecodeerd. De builder gebruikt alleen Python-stdlib, accepteert uitsluitend de exact gegenereerde allowlist en controleert alle bytegroottes en SHA256-hashes voor het schrijven. Hij schrijft uitsluitend onder `ordercrew-site/`, verwijdert niets en weigert onverwachte bestanden of doorverwijzende paden. Gebruik een schone build als een oude uitvoermap onverwachte bestanden bevat.
 
-Het eerdere ZIP-bestand is voor deze build niet nodig. De builder leest of wijzigt dat ZIP-bestand niet.
+Het oudere ZIP-bestand in deze repository is historisch en wordt niet gebouwd. Het afzonderlijk opgeleverde releasepakket (`upload/ordercrew-render-site.zip`) heeft SHA256: `f7aa6e9d3e99b3babccd603338e9110b61f829862d78f08f319e2040915a4a9a`.
 
-## Controleerbare bron
+De app gebruikt voorbeeldgegevens. De gedeelde demo-inlog is geen serverbeveiliging voor persoonlijke gegevens; er worden geen echte bestellingen verzonden en er is geen live kassakoppeling. De producttour is een interactieve presentatie. Alleen een afzonderlijk meegeleverd afspeelbaar videobestand mag als video worden beschreven.
 
-`site-source.json` bevat precies de 20 openbare websitebestanden. HTML, CSS, JavaScript, SVG, XML en JSON staan als leesbare UTF-8-tekstregels in het bestand. Alleen de binaire PNG- en ICO-afbeeldingen gebruiken base64. Elke bronregel behoudt zijn oorspronkelijke regeleinde; de builder voegt de regels zonder extra tekens samen.
-
-Voor elk bestand staan pad, bytegrootte en SHA256 in de bron. De builder controleert eerst alle twintig bestanden op de vaste allowlist, veilige paden, grootte en hash. Pas daarna schrijft hij onder `ordercrew-site/`, met een tweede hashcontrole van de geschreven bestanden. Onverwachte bestanden of symlinks worden geweigerd. De builder verwijdert niets en schrijft niet buiten zijn uitvoermap.
-
-De bestandsbytes zijn gelijk aan de gecontroleerde release van 27 oktober 2026. De homepage behoudt de Google-verificatietag, canonical en sitemap. Login, demo en privacy blijven `noindex`. Het bestaande OrderCrew-logo staat in de faviconformaten; Google bepaalt zelf wanneer zoekresultaten worden bijgewerkt. CSS- en JavaScript-links gebruiken inhoudsversies om oude browsercache te voorkomen.
-
-## Grenzen van de demo
-
-De voorbeeldkeuken gebruikt fictieve gegevens en lokale browseropslag. De bestaande gedeelde demo-inlog is een demo-toegangsscherm, geen serverbeveiliging voor privégegevens. Er worden geen echte bestellingen verstuurd en er is geen live DISH-koppeling. Er zijn geen hosting-, GitHub- of persoonlijke accountgegevens toegevoegd.
-
-Een geslaagde lokale build bewijst de bestandsinhoud. De daadwerkelijke Render-uitrol, HTTPS-routes en browserwerking moeten na publicatie afzonderlijk worden gecontroleerd.
+Een lokale build bewijst de bestandsinhoud. Render-publicatie, domein/TLS, browserwerking en het Google-zoekresultaat worden daarna afzonderlijk gecontroleerd.
