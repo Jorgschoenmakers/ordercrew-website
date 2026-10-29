@@ -1,8 +1,8 @@
 {
   "format_version": 2,
-  "release": "OrderCrew bilingual, FAQ and founders 2026-10-29",
+  "release": "OrderCrew founder portraits 2026-10-29",
   "publish_directory": "ordercrew-site",
-  "reference_archive_sha256": "63701dac47bf4984a57ada4d6e6e9601279ff20572106ff144e6185ab0d6b75c",
+  "reference_archive_sha256": "d91f3ce5be208d255411228e9c42ebcabfe2e92019a10f52de3e3af554acafc1",
   "source_part": "en",
   "files": [
     {
@@ -1441,8 +1441,8 @@
     },
     {
       "path": "en/index.html",
-      "bytes": 17841,
-      "sha256": "0144b35e40347836ec5a78823c6f8f40fe9aa0e89ba7ab484ac4b2eeccf07ffb",
+      "bytes": 17967,
+      "sha256": "1a59de16a21f7a180ad38b54d92214e58cde09c0f6810470e0980f5fd6f97bbc",
       "encoding": "utf-8",
       "content": [
         "<!doctype html>\r\n",
@@ -1458,7 +1458,7 @@
         "<link rel=\"icon\" href=\"/favicon-96.png\" type=\"image/png\" sizes=\"96x96\">\r\n",
         "<link rel=\"apple-touch-icon\" href=\"/apple-touch-icon.png\" sizes=\"180x180\">\r\n",
         "<link rel=\"manifest\" href=\"/site.webmanifest\">\r\n",
-        "  <link rel=\"stylesheet\" href=\"/assets/site.css?v=690bd9a22ddb\">\r\n",
+        "  <link rel=\"stylesheet\" href=\"/assets/site.css?v=1058e2a677e4\">\r\n",
         "  <script src=\"/assets/site.en.js?v=350bee41df67\" defer></script>\r\n",
         "<meta name=\"robots\" content=\"index,follow\">\r\n",
         "<meta property=\"og:type\" content=\"website\">\r\n",
@@ -1556,7 +1556,7 @@
         "  <div class=\"benefit-list\"><article><span class=\"benefit-icon\"><svg class=\"icon\" aria-hidden=\"true\"><use href=\"/assets/icons.svg#clipboard\"></use></svg></span><div><h3>Everyone knows what needs to be ready</h3><p>Dishes, quantities and tasks on one prep list.</p><a href=\"#product\" data-open-view=\"mep\">View the prep list <svg class=\"icon\" aria-hidden=\"true\"><use href=\"/assets/icons.svg#arrow-right\"></use></svg></a></div></article><article><span class=\"benefit-icon\"><svg class=\"icon\" aria-hidden=\"true\"><use href=\"/assets/icons.svg#box\"></use></svg></span><div><h3>Your stock counts too</h3><p>Counted stock is deducted from demand, showing the actual shortfall.</p><a href=\"#product\" data-open-view=\"voorraad\">View the stock <svg class=\"icon\" aria-hidden=\"true\"><use href=\"/assets/icons.svg#arrow-right\"></use></svg></a></div></article><article><span class=\"benefit-icon\"><svg class=\"icon\" aria-hidden=\"true\"><use href=\"/assets/icons.svg#truck\"></use></svg></span><div><h3>A clear list for each supplier</h3><p>With the quantities you need, rounded up to pack sizes.</p><a href=\"#product\" data-open-view=\"bestellen\">View the order <svg class=\"icon\" aria-hidden=\"true\"><use href=\"/assets/icons.svg#arrow-right\"></use></svg></a></div></article></div></div>\r\n",
         "  <div class=\"integration-note\"><svg class=\"icon\" aria-hidden=\"true\"><use href=\"/assets/icons.svg#chart\"></use></svg><p><strong>Your till sales are the next step.</strong> A DISH integration is being prepared. In this demo, you enter your own sales forecast.</p><span>In development</span></div>\r\n",
         "</div></section>\r\n",
-        "<section class=\"about-section section container\" id=\"over-ons\" aria-labelledby=\"about-title\"><div><p class=\"eyebrow\">About us</p><h2 id=\"about-title\">The people<br>behind OrderCrew.</h2></div><div><p>Thomas Winters and Stijn Oudelaar are developing OrderCrew: one overview for dishes, prep, stock and ordering.</p><p>The idea is simple: fewer separate lists and a clearer kitchen plan. The demo shows how dishes, recipes and quantities work together.</p><div class=\"founder-grid\" aria-label=\"The people behind OrderCrew\"><article class=\"founder-card\"><span class=\"founder-initials\" aria-hidden=\"true\">TW</span><h3>Thomas Winters</h3></article><article class=\"founder-card\"><span class=\"founder-initials\" aria-hidden=\"true\">SO</span><h3>Stijn Oudelaar</h3></article></div></div></section>\r\n",
+        "<section class=\"about-section section container\" id=\"over-ons\" aria-labelledby=\"about-title\"><div><p class=\"eyebrow\">About us</p><h2 id=\"about-title\">The people<br>behind OrderCrew.</h2></div><div><p>Thomas Winters and Stijn Oudelaar are developing OrderCrew: one overview for dishes, prep, stock and ordering.</p><p>The idea is simple: fewer separate lists and a clearer kitchen plan. The demo shows how dishes, recipes and quantities work together.</p><div class=\"founder-grid\" aria-label=\"The people behind OrderCrew\"><article class=\"founder-card\"><img class=\"founder-photo\" src=\"/assets/thomas-winters.jpg\" width=\"80\" height=\"80\" alt=\"\" loading=\"lazy\" decoding=\"async\"><h3>Thomas Winters</h3></article><article class=\"founder-card\"><img class=\"founder-photo\" src=\"/assets/stijn-oudelaar.jpg\" width=\"80\" height=\"80\" alt=\"\" loading=\"lazy\" decoding=\"async\"><h3>Stijn Oudelaar</h3></article></div></div></section>\r\n",
         "<section class=\"faq-section container\" id=\"veelgestelde-vragen\" aria-labelledby=\"faq-title\"><div class=\"faq-intro\"><p class=\"eyebrow\">Frequently asked questions</p><h2 id=\"faq-title\">Good to know.</h2></div><div class=\"faq-list\"><details><summary>Who is OrderCrew for? <svg class=\"icon\" aria-hidden=\"true\"><use href=\"/assets/icons.svg#plus\"></use></svg></summary><p>For restaurants and other hospitality kitchens that want to keep dishes, prep, stock and purchasing together.</p></details><details><summary>What can I try in the demo? <svg class=\"icon\" aria-hidden=\"true\"><use href=\"/assets/icons.svg#plus\"></use></svg></summary><p>Adjust your sales forecast, view linked recipes, tick off prep tasks and create a suggested order based on your stock.</p></details><details><summary>What does MEP mean? <svg class=\"icon\" aria-hidden=\"true\"><use href=\"/assets/icons.svg#plus\"></use></svg></summary><p>MEP stands for mise-en-place: everything you prepare before service. Each dish shows the quantities, recipe and tasks needed.</p></details><details><summary>Is OrderCrew connected to my till yet? <svg class=\"icon\" aria-hidden=\"true\"><use href=\"/assets/icons.svg#plus\"></use></svg></summary><p>Not yet. A DISH integration is being prepared. You enter expected sales yourself in the demo; no data is retrieved from a till.</p></details><details><summary>Are real orders sent? <svg class=\"icon\" aria-hidden=\"true\"><use href=\"/assets/icons.svg#plus\"></use></svg></summary><p>No. You use sample data and can export order lists. Nothing is sent to suppliers.</p></details><details><summary>Do I need a personal account? <svg class=\"icon\" aria-hidden=\"true\"><use href=\"/assets/icons.svg#plus\"></use></svg></summary><p>No. Open the sample kitchen with the shared demo login. The demo does not create a personal account.</p></details><details><summary>Where are my demo changes saved? <svg class=\"icon\" aria-hidden=\"true\"><use href=\"/assets/icons.svg#plus\"></use></svg></summary><p>In this browser on this device. They are not shared with other visitors. Signing out clears changes made in this demo version. <a href=\"privacy.html\">Read more about the demo and privacy.</a></p></details></div></section>\r\n",
         "<section class=\"cta-section container\"><div><p class=\"eyebrow\">See for yourself</p><h2>Your next service.<br>With a clear plan.</h2><p>Open the sample kitchen and see your lists update together.</p></div><a class=\"button button-light\" href=\"login.html\">Try the demo <svg class=\"icon\" aria-hidden=\"true\"><use href=\"/assets/icons.svg#arrow-right\"></use></svg></a></section>\r\n",
         "</main>\r\n",
