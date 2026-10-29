@@ -1,8 +1,8 @@
 {
   "format_version": 2,
-  "release": "OrderCrew founder portraits 2026-10-29",
+  "release": "OrderCrew founder biographies and contact 2026-10-29",
   "publish_directory": "ordercrew-site",
-  "reference_archive_sha256": "d91f3ce5be208d255411228e9c42ebcabfe2e92019a10f52de3e3af554acafc1",
+  "reference_archive_sha256": "9fb6313a60868ef90597146a1b7ec25ca883b745340ed4a65ee989626117bdd0",
   "source_part": "portraits",
   "files": [
     {
