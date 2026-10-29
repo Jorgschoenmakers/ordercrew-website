@@ -8,34 +8,52 @@ import sys
 HERE = Path(__file__).resolve().parent
 OUTPUT = HERE / 'ordercrew-site'
 # Generated from the reviewed public source. Paths, encodings, sizes and hashes
-# are independently fixed here as well as in site-source.json.
+# are independently fixed here as well as in both source documents.
 ALLOWED = {'apple-touch-icon.png': {'bytes': 11795,
                           'encoding': 'base64',
                           'sha256': 'ea199f80e75335a561a9c086995d4114527db3805d6cbbbfaddfaf3ed1da73fd'},
- 'assets/auth.css': {'bytes': 9369,
+ 'assets/auth.css': {'bytes': 10321,
                      'encoding': 'utf-8',
-                     'sha256': '0173ddc138271c102ea74b1f27ddb3c2de405931abf535a4d003822b0273009b'},
+                     'sha256': '665d10341a0bb94037fffa34123a0a9c9c555db271b005708beaa68805000e5f'},
  'assets/brand.svg': {'bytes': 1887,
                       'encoding': 'utf-8',
                       'sha256': '26e8d0aef8ca612a63d5bf1e540cbf6382d44823bb87d01fe7414318d4c6975f'},
  'assets/demo-access.js': {'bytes': 1634,
                            'encoding': 'utf-8',
                            'sha256': 'd3440d6ef511aaef8f699c2afb0156c2e6509409e25cb9d3353092ce4acc458a'},
+ 'assets/demo-locale.js': {'bytes': 614,
+                           'encoding': 'utf-8',
+                           'sha256': 'c4de9c31f629ecfca30d958503b13d28971309e3f0e93f03cfe0c497b15b0171'},
  'assets/icons.svg': {'bytes': 12455,
                       'encoding': 'utf-8',
                       'sha256': 'df60d367bf536a7b2a8d8d1bf64d961c01e58267b684767af9ddff65b0be8a44'},
- 'assets/login.js': {'bytes': 1662,
+ 'assets/login.js': {'bytes': 2206,
                      'encoding': 'utf-8',
-                     'sha256': '10895f3dd7fe25c697147faa59749e3ab9ae1c8c81ecd49cb5531bbfc52ba56f'},
- 'assets/site.css': {'bytes': 21674,
+                     'sha256': 'f68d0177c882ac2161fc53f12444caf3b5cb4251111a3cab9e55007016221f2d'},
+ 'assets/site.css': {'bytes': 24409,
                      'encoding': 'utf-8',
-                     'sha256': '86accb1cff9565a0e82339b1aeb7a33718984a9c87f4085a0b7ee0f1d2115207'},
+                     'sha256': '690bd9a22ddbeedac0feb1b6b43db8c9fab536816370269239d9abd7b0e7f0da'},
+ 'assets/site.en.js': {'bytes': 8383,
+                       'encoding': 'utf-8',
+                       'sha256': '350bee41df675ea6ee0a2fc7da400ba57aaf050a4427203659bb6ede2c60dcf6'},
  'assets/site.js': {'bytes': 8426,
                     'encoding': 'utf-8',
                     'sha256': 'df45ab5219720281f26dbd30c32d14d503b6147d3520f153238f9cc61a5588eb'},
- 'demo.html': {'bytes': 216882,
+ 'demo.html': {'bytes': 217791,
                'encoding': 'utf-8',
-               'sha256': 'b2216380f6e0aca778ba35241eff9e1bc4a50a2ba91c76ec9fe8723b74824a12'},
+               'sha256': 'feddc000b2bc94f4ccd2b01d8b88e7bff6917b8c30c44179b270766d8a433eb7'},
+ 'en/demo.html': {'bytes': 216517,
+                  'encoding': 'utf-8',
+                  'sha256': '7a488e6d77631105a49dcd4b490afef11c26bdab81ef1586531f3582cc76ae73'},
+ 'en/index.html': {'bytes': 17841,
+                   'encoding': 'utf-8',
+                   'sha256': '0144b35e40347836ec5a78823c6f8f40fe9aa0e89ba7ab484ac4b2eeccf07ffb'},
+ 'en/login.html': {'bytes': 6147,
+                   'encoding': 'utf-8',
+                   'sha256': '1ee21b5753c366c5124c3c60f0a4f2158173c69f4e0388a83912ec0b4b7e4caa'},
+ 'en/privacy.html': {'bytes': 6150,
+                     'encoding': 'utf-8',
+                     'sha256': '9866a2c40ab229e0bbc849236428c72821f1beb574b1deae1c4f0e548cd4066d'},
  'favicon-48.png': {'bytes': 2867,
                     'encoding': 'base64',
                     'sha256': 'eac6d5b71951b202b1d05fa3a2c2403361276ba995ad784dc1f017df1875d58e'},
@@ -54,24 +72,55 @@ ALLOWED = {'apple-touch-icon.png': {'bytes': 11795,
  'icon-512.png': {'bytes': 32929,
                   'encoding': 'base64',
                   'sha256': '1a4b38ce0074c71754f29abfb5525494c3d9a5700bb7b69e8ace829685b08ef2'},
- 'index.html': {'bytes': 16039,
+ 'index.html': {'bytes': 18118,
                 'encoding': 'utf-8',
-                'sha256': '6502c08f90948b3f6dd12974d5ccc8d685f7b69cedcfd11f90ae976deca40f11'},
- 'login.html': {'bytes': 5725,
+                'sha256': 'fd55caa315525bd1d527d7fe6892f04b63449690a37a2209e27b59e60b1a72e7'},
+ 'login.html': {'bytes': 6211,
                 'encoding': 'utf-8',
-                'sha256': '33837518639f800ab9e69e4fa605456293cd9bb9b8c7569d5ae8412fd57f475b'},
- 'privacy.html': {'bytes': 6006,
+                'sha256': '7b3a54034d71c898f2dce09fcd51d1061ad3dd55c56abbf3d1380836756a57e5'},
+ 'privacy.html': {'bytes': 6502,
                   'encoding': 'utf-8',
-                  'sha256': '5c7051ae9f86ec65f668aada3c98e27855137f5c6e27bbeebe349d06d9ee0fd9'},
+                  'sha256': '6ed1d7c1994672443a4c957f9aa750194272854098138c6270d7778973e18f58'},
  'robots.txt': {'bytes': 70,
                 'encoding': 'utf-8',
                 'sha256': '85a0d28ee26c036fae7c4bd4f1fc9afd7ff0d0e46f00d9827343334ef44be6cb'},
  'site.webmanifest': {'bytes': 581,
                       'encoding': 'utf-8',
                       'sha256': '1124818aa8af8b7aaefd1254b544a3e65c900d98f4d54513124f59eb4f33d3eb'},
- 'sitemap.xml': {'bytes': 189,
+ 'sitemap.xml': {'bytes': 271,
                  'encoding': 'utf-8',
-                 'sha256': 'e2867c4d88fb9e70a4255898decc9dc78dd33061c8085630cec478a36314441e'}}
+                 'sha256': 'a72200a1c72a4e828927848c6f458cc7cc9866c6cee89ae6202433b5ec352f59'}}
+SOURCES = {'site-source-en.json': {'part': 'en',
+                         'paths': ['assets/site.en.js',
+                                   'en/demo.html',
+                                   'en/index.html',
+                                   'en/login.html',
+                                   'en/privacy.html']},
+ 'site-source.json': {'part': 'nl-shared',
+                      'paths': ['apple-touch-icon.png',
+                                'assets/auth.css',
+                                'assets/brand.svg',
+                                'assets/demo-access.js',
+                                'assets/demo-locale.js',
+                                'assets/icons.svg',
+                                'assets/login.js',
+                                'assets/site.css',
+                                'assets/site.js',
+                                'demo.html',
+                                'favicon-48.png',
+                                'favicon-96.png',
+                                'favicon.ico',
+                                'favicon.svg',
+                                'icon-192.png',
+                                'icon-512.png',
+                                'index.html',
+                                'login.html',
+                                'privacy.html',
+                                'robots.txt',
+                                'site.webmanifest',
+                                'sitemap.xml']}}
+RELEASE = 'OrderCrew bilingual, FAQ and founders 2026-10-29'
+ARCHIVE_SHA256 = '63701dac47bf4984a57ada4d6e6e9601279ff20572106ff144e6185ab0d6b75c'
 
 
 def require(condition, message):
@@ -96,11 +145,28 @@ def target_for(relative):
 
 
 def validated_files():
-    source = json.loads((HERE / 'site-source.json').read_text(encoding='utf-8'))
-    require(source.get('format_version') == 1, 'Unsupported source format')
-    require(source.get('publish_directory') == 'ordercrew-site', 'Unexpected publish directory')
-    entries = source.get('files')
-    require(isinstance(entries, list) and len(entries) == len(ALLOWED), 'Unexpected public file count')
+    # Read and validate every partition before creating or changing any output.
+    entries = []
+    for filename, specification in SOURCES.items():
+        source_path = HERE / filename
+        require(not source_path.is_symlink() and source_path.resolve().is_relative_to(HERE),
+                'Source path may not redirect: ' + filename)
+        source = json.loads(source_path.read_text(encoding='utf-8'))
+        require(isinstance(source, dict), 'Source document must be an object: ' + filename)
+        require(source.get('format_version') == 2, 'Unsupported source format')
+        require(source.get('release') == RELEASE, 'Unexpected source release')
+        require(source.get('publish_directory') == 'ordercrew-site', 'Unexpected publish directory')
+        require(source.get('reference_archive_sha256') == ARCHIVE_SHA256, 'Unexpected release archive')
+        require(source.get('source_part') == specification['part'], 'Unexpected source partition')
+        part_entries = source.get('files')
+        require(isinstance(part_entries, list) and len(part_entries) == len(specification['paths']),
+                'Unexpected source partition file count: ' + filename)
+        require(all(isinstance(entry, dict) and isinstance(entry.get('path'), str) for entry in part_entries),
+                'Invalid source partition entries: ' + filename)
+        require(sorted(entry['path'] for entry in part_entries) == specification['paths'],
+                'Source partition paths differ from reviewed paths: ' + filename)
+        entries.extend(part_entries)
+    require(len(entries) == len(ALLOWED), 'Unexpected public file count')
     prepared, seen = [], set()
     for entry in entries:
         require(isinstance(entry, dict), 'Invalid source entry')
