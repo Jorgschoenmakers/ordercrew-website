@@ -1,6 +1,6 @@
 # OrderCrew website
 
-Plaats `site-source.json`, `build_site.py` en `README.md` samen in de hoofdmap van de GitHub-repository.
+Plaats `site-source.json`, `site-source-en.json`, `build_site.py` en `README.md` samen in de hoofdmap van de GitHub-repository.
 
 Render Build Command blijft:
 
@@ -10,7 +10,7 @@ python3 build_site.py
 
 Render Publish Directory blijft `ordercrew-site`.
 
-De bron bevat 27 openbare bestanden. HTML, CSS, JavaScript, SVG en andere tekst staan als leesbare UTF-8-regels in JSON. Alleen binaire media worden base64 gecodeerd. De builder gebruikt alleen Python-stdlib, accepteert uitsluitend de exact gegenereerde allowlist en controleert alle bytegroottes en SHA256-hashes voor het schrijven. Hij schrijft uitsluitend onder `ordercrew-site/`, verwijdert niets en weigert onverwachte bestanden of doorverwijzende paden. Gebruik een schone build als een oude uitvoermap onverwachte bestanden bevat.
+De bron bevat 27 openbare bestanden, verdeeld over twee bronbestanden van elk minder dan 500000 bytes voor betrouwbare browserpublicatie. `site-source.json` bevat Nederlands en gedeelde bestanden; `site-source-en.json` bevat de Engelse pagina's en `assets/site.en.js`. HTML, CSS, JavaScript, SVG en andere tekst staan als leesbare UTF-8-regels in JSON. Alleen binaire media worden base64 gecodeerd. De builder gebruikt alleen Python-stdlib, leest beide bronbestanden en controleert eerst formaat, release, partitie, archiefreferentie, exact toegestane paden, alle bytegroottes en SHA256-hashes. Pas daarna schrijft hij onder `ordercrew-site/`. Hij verwijdert niets en weigert onverwachte bestanden of doorverwijzende paden. Gebruik een schone build als een oude uitvoermap onverwachte bestanden bevat.
 
 Het oudere ZIP-bestand in deze repository is historisch en wordt niet gebouwd. Het afzonderlijk opgeleverde releasepakket (`upload/ordercrew-render-site.zip`) heeft SHA256: `63701dac47bf4984a57ada4d6e6e9601279ff20572106ff144e6185ab0d6b75c`.
 
