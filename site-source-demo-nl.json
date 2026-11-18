@@ -1,14 +1,14 @@
 {
   "format_version": 2,
-  "release": "OrderCrew founder biographies and contact 2026-10-29",
+  "release": "OrderCrew pilot onboarding 2026-11-18",
   "publish_directory": "ordercrew-site",
-  "reference_archive_sha256": "9fb6313a60868ef90597146a1b7ec25ca883b745340ed4a65ee989626117bdd0",
+  "reference_archive_sha256": "da1ae249d457b19befbe03bbae1580416a44c452b69ca42d85576da0fa2e9bd0",
   "source_part": "demo-nl",
   "files": [
     {
       "path": "demo.html",
-      "bytes": 217791,
-      "sha256": "feddc000b2bc94f4ccd2b01d8b88e7bff6917b8c30c44179b270766d8a433eb7",
+      "bytes": 217837,
+      "sha256": "ecc16f25fb0b110e0b92501d34b033d499d77366a4bceae1b794c412494dd8f8",
       "encoding": "utf-8",
       "content": [
         "<!doctype html>\r\n",
@@ -380,7 +380,7 @@
         "<noscript><div class=\"noscript\">Deze interactieve demo heeft JavaScript nodig. Schakel JavaScript in en <a href=\"login.html\">log in met het demoaccount</a> om de voorbeeldkeuken te proberen.</div></noscript>\r\n",
         "<div class=\"app\"><main class=\"main\">\r\n",
         "<header class=\"topbar\"><a class=\"brand flex\" href=\"#overzicht\" aria-label=\"OrderCrew Home\"><img class=\"brand-logo\" src=\"assets/brand.svg\" alt=\"\" width=\"34\" height=\"34\">OrderCrew</a><span id=\"crumb\" class=\"hidden\">Home</span><div class=\"top-meta\"><nav class=\"oc-demo-language\" aria-label=\"Taal\"><a href=\"demo.html\" hreflang=\"nl\" lang=\"nl\" data-demo-language=\"nl\" aria-current=\"page\">NL</a><a href=\"en/demo.html\" hreflang=\"en\" lang=\"en\" data-demo-language=\"en\">EN</a></nav><span class=\"pill demo\">Demo</span><button class=\"top-settings\" data-view=\"meer\" aria-label=\"Instellingen en uitleg\"><span data-icon=\"info\"></span><span>Instellingen</span></button></div></header>\r\n",
-        "<div class=\"content\"><div class=\"print-title\">OrderCrew · Voorbeeldgegevens</div><div id=\"view\"></div><footer class=\"footer\"><span>OrderCrew · Voorbeeldkeuken · Geen echte bestellingen</span><span id=\"saveStatus\">Op dit apparaat</span><button id=\"resetBtn\">Demo herstellen</button></footer></div>\r\n",
+        "<div class=\"content\"><div class=\"print-title\">OrderCrew · Voorbeeldgegevens</div><div id=\"view\"></div><footer class=\"footer\"><span>OrderCrew · Voorbeeldkeuken · Geen echte bestellingen</span><a href=\"onboarding.html\">Pilot-onboarding</a><span id=\"saveStatus\">Op dit apparaat</span><button id=\"resetBtn\">Demo herstellen</button></footer></div>\r\n",
         "</main></div>\r\n",
         "<nav class=\"mobile-nav\" aria-label=\"Hoofdnavigatie\">\r\n",
         "<button data-view=\"overzicht\"><span data-icon=\"grid\"></span>Home</button>\r\n",
