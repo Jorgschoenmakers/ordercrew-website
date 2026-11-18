@@ -1,8 +1,8 @@
 {
   "format_version": 2,
-  "release": "OrderCrew verkoopverwachting 2026-11-18",
+  "release": "OrderCrew voorraadpartijen en bestelperioden 2026-11-18",
   "publish_directory": "ordercrew-site",
-  "reference_archive_sha256": "69566cc5e99352d7bd7dfdbed1777d79d1d4d02a69c1ae702448ac144fb72f91",
+  "reference_archive_sha256": "89158ce7b1f8551143bdd18a722b50cf80cf3d8d8eead0dbf592cc29f667541e",
   "source_part": "portraits",
   "files": [
     {
