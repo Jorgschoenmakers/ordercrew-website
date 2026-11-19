@@ -21,3 +21,9 @@ De demo berekent met fictieve reserveringen, historische opkomst en historische 
 De chef kiest per product de bestelperiode en kan de getelde voorraad over partijen verdelen. OrderCrew rekent per geplande gebruiksdag met de beschikbare hoeveelheid, uiterste gebruiksdatum en ingevulde ontdooitijd. De mise-en-place toont wanneer en hoeveel de keuken moet ontdooien. De leverancierslijst toont het resterende tekort en rondt de bestelling af op hele verpakkingen. Partijen en aanpassingen in deze demo worden lokaal in de browser bewaard.
 
 Een lokale build bewijst de bestandsinhoud. Render-publicatie, domein/TLS, browserwerking en het Google-zoekresultaat worden daarna afzonderlijk gecontroleerd.
+
+## Productvisualisaties van 19 november 2026
+
+Alleen de Nederlandse homepage krijgt apparaatbeelden en een videosectie. De bestaande navigatie, teksten, kleuren, het lettertype, demo en andere pagina’s blijven behouden. `site-source-product-images.json` en `site-source-product-video.json` leveren de extra media en geïsoleerde CSS. De oorspronkelijke archiefreferentie blijft de referentie naar de basisrelease; de allowlist bevat bijgewerkte hashes voor de homepage en nieuwe media.
+
+De 29 seconden durende video toont echte schermbeelden met voorbeeldgegevens en heeft geen geluid. Het is een gemonteerde schermpresentatie, geen gefilmde praktijktest. De huidige demo bewaart wijzigingen lokaal en verzendt geen echte orders.
