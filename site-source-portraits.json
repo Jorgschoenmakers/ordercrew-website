@@ -1,8 +1,8 @@
 {
   "format_version": 2,
-  "release": "OrderCrew voorraadpartijen en bestelperioden 2026-11-18",
+  "release": "OrderCrew Zenchef-reserveringen en apparaatweergave 2026-11-20",
   "publish_directory": "ordercrew-site",
-  "reference_archive_sha256": "89158ce7b1f8551143bdd18a722b50cf80cf3d8d8eead0dbf592cc29f667541e",
+  "reference_archive_sha256": "e4c5fb4ed349533ea8bdcc34b569ccb9be78d1cd5d7869b43827e50f247361fc",
   "source_part": "portraits",
   "files": [
     {
